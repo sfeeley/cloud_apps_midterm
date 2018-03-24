@@ -6,6 +6,10 @@ with warnings.catch_warnings():
 
 import CupcakeServices as order_list
 
+@error(500)
+def sign_in_error(error):
+    return template('sign-in-error.tpl')
+
 @get('/')
 def get_sign_in():
     return template('sign-in.tpl')
@@ -53,10 +57,6 @@ def get_order_list():
 
     output = template('OrderPage.tpl', newOrders=newOrders, oldOrders=oldOrders)
     return output
-
-@get('/test')
-def test():
-    newOrders = order_list.get_orders_by_status("0")
     
 
 @get('/update-order/<id>')

@@ -12,7 +12,10 @@
 
     <div class="w3-panel" style="text-align:center">
         <h2>You have found the owner's page. Please follow the link below to our cart</h2>
-        <a href="https:/google.com">Take me to the cart</a>
+        <a href="http://159.89.85.118:8080/" class="w3-btn w3-round-large w3-purple w3-right w3-margin">Take me to the cart</a>
+        <br>
+        <h2>If you are the owner, please return to login and try again</h2>
+        <a href="/sign-out" class="w3-btn w3-round-large w3-purple w3-right w3-margin">Return to Login Page</a>
     </div> 
     
 </body>
